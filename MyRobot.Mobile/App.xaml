@@ -1,0 +1,8 @@
+﻿<Application
+    x:Class="MyRobot.Mobile.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MyRobot.Mobile"
+    RequestedTheme="Light">
+
+</Application>
