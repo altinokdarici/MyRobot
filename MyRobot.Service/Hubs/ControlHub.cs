@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Microsoft.AspNet.SignalR;
+using MyRobot.Models;
 
 namespace MyRobot.Service.Hubs
 {
@@ -14,12 +15,5 @@ namespace MyRobot.Service.Hubs
         }
     }
 
-    public enum Command : byte
-    {
-        Go = 1,
-        Back = 2,
-        Left = 3,
-        Right = 4
-    }
 
 }

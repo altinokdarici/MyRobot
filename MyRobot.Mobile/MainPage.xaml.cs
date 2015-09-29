@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.SignalR.Client;
+using MyRobot.Models;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -28,7 +29,40 @@ namespace MyRobot.Mobile
         public MainPage()
         {
             this.InitializeComponent();
+            ButtonGo.ClickMode = ClickMode.Press;
+            ButtonGo.PointerReleased += ButtonGo_PointerReleased;
+            ButtonBack.ClickMode = ClickMode.Press;
+            ButtonBack.PointerReleased += ButtonBack_PointerReleased;
+            ButtonLeft.ClickMode = ClickMode.Press;
+            ButtonLeft.PointerReleased += ButtonLeft_PointerReleased;
+            ButtonRight.ClickMode = ClickMode.Press;
+            ButtonRight.PointerReleased += ButtonRight_PointerReleased;
         }
+
+        private void ButtonRight_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            controlHubProxy.Invoke("SendCommand", new object[] { Command.NoOp });
+
+
+        }
+
+        private void ButtonLeft_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            controlHubProxy.Invoke("SendCommand", new object[] { Command.NoOp });
+        }
+
+        private void ButtonBack_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            controlHubProxy.Invoke("SendCommand", new object[] { Command.NoOp });
+        }
+
+        private void ButtonGo_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            controlHubProxy.Invoke("SendCommand", new object[] { Command.NoOp });
+        }
+
+
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             hubConnection = new HubConnection("http://myrobotservice.azurewebsites.net/");
@@ -48,13 +82,7 @@ namespace MyRobot.Mobile
                 TextBlockStatus.Text += string.Format("{0}->{1} at {2}\n", obj.OldState, obj.NewState, DateTime.Now);
             });
         }
-        public enum Command : byte
-        {
-            Go = 1,
-            Back = 2,
-            Left = 3,
-            Right = 4
-        }
+  
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {

@@ -130,6 +130,12 @@
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MyRobot.Models\MyRobot.Models.csproj">
+      <Project>{351466cb-1a1d-4ba8-ad0a-eb8edcf60332}</Project>
+      <Name>MyRobot.Models</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
