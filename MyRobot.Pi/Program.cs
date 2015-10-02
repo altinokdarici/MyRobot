@@ -13,9 +13,9 @@ namespace MyRobot.Pi
     class Program
     {
         readonly static int pinLeftPositive = 0;
-        readonly static int pinLeftNegative = 0;
-        readonly static int pinRightPositive = 0;
-        readonly static int pinRightNegative = 0;
+        readonly static int pinLeftNegative = 2;
+        readonly static int pinRightPositive =3;
+        readonly static int pinRightNegative = 4;
 
 
         static void Main(string[] args)
