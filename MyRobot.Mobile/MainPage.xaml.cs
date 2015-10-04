@@ -29,14 +29,14 @@ namespace MyRobot.Mobile
         public MainPage()
         {
             this.InitializeComponent();
-            ButtonGo.ClickMode = ClickMode.Press;
+          /*  ButtonGo.ClickMode = ClickMode.Press;
             ButtonGo.PointerReleased += ButtonGo_PointerReleased;
             ButtonBack.ClickMode = ClickMode.Press;
             ButtonBack.PointerReleased += ButtonBack_PointerReleased;
             ButtonLeft.ClickMode = ClickMode.Press;
             ButtonLeft.PointerReleased += ButtonLeft_PointerReleased;
             ButtonRight.ClickMode = ClickMode.Press;
-            ButtonRight.PointerReleased += ButtonRight_PointerReleased;
+            ButtonRight.PointerReleased += ButtonRight_PointerReleased;*/
         }
 
         private void ButtonRight_PointerReleased(object sender, PointerRoutedEventArgs e)

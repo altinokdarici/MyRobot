@@ -112,10 +112,15 @@
     <Content Include="Global.asax" />
     <None Include="Properties\PublishProfiles\myrobotservice.pubxml" />
     <None Include="Scripts\jquery-1.6.4-vsdoc.js" />
+    <Content Include="index.html" />
+    <Content Include="Pi.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="Scripts\jquery-1.6.4.js" />
     <Content Include="Scripts\jquery-1.6.4.min.js" />
     <Content Include="Scripts\jquery.signalR-2.2.0.js" />
     <Content Include="Scripts\jquery.signalR-2.2.0.min.js" />
+    <Content Include="Scripts\virtualjoystick.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

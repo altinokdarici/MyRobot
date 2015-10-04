@@ -17,20 +17,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Grid Grid.Row="1">
-            <Grid.RowDefinitions>
-                <RowDefinition/>
-                <RowDefinition/>
-                <RowDefinition/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
-            <Button x:Name="ButtonGo" Content="Go" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="Button_Click"/>
-            <Button x:Name="ButtonLeft" Content="Left" Grid.Column="0" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="ButtonLeft_Click"/>
-            <Button x:Name="ButtonRight" Content="Right" Grid.Column="2" Grid.Row="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="ButtonRight_Click"/>
-            <Button x:Name="ButtonBack" Content="Back" Grid.Column="1" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Click="ButtonBack_Click"/>
+
         </Grid>
         <TextBlock Grid.Row="1" Grid.Column="1" x:Name="TextBlockStatus"/>
     </Grid>

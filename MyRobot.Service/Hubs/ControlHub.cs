@@ -13,6 +13,11 @@ namespace MyRobot.Service.Hubs
         {
             Clients.Others.CommandReceived(c);
         }
+
+        public void SendDistance(string d)
+        {
+            Clients.Others.DistanceReceived(d);
+        }
     }
 
 
